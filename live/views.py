@@ -35,6 +35,7 @@ def index(request):
         cap = str(fv).upper()
     else:
         cap = str(fv).capitalize()
+        cap = "".join(cap.split())
     #print(cap)
     if not fv:
         c0="Please type the country name"
