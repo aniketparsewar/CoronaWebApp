@@ -7,8 +7,8 @@ def world(country):
     url = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total"
 
     headers = {
-        'x-rapidapi-host': "covid-19-coronavirus-statistics.p.rapidapi.com",
-        'x-rapidapi-key': "6baec3a959msh19ecd967352bd8ap1d175ajsn23b072e115e0"
+        'x-rapidapi-host': "*",
+        'x-rapidapi-key': "*"
     }
     querystring = {"country": country}
     worlddata = requests.request("GET", url, headers=headers, params=querystring)
